@@ -14260,6 +14260,7 @@ game.Players.LocalPlayer.Character=prt
 Tab:AddButton({
 	Name = "Tornado",
 	Callback = function()
+		game.StarterGui:SetCore("SendNotification", {Title = "LK Script", Text = "Tornado Başlatılıyor...", Duration = 3,})
       		local UserInputService = game:GetService("UserInputService")
 local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 local Folder = Instance.new("Folder", game:GetService("Workspace"))
