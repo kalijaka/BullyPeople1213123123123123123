@@ -1,4 +1,17 @@
---[[
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, ConfigFolder = "Orbit"})
+OrionLib:MakeNotification({
+    Name = ".",
+    Content = "Giriş Yapmalısın!!!",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+
+_G.Key = "Dogrulama"
+_G.KeyInput = "string"
+
+function MakeScriptHub()
+    --[[
 
 					~~//  Color Code (HEX)  \\~~
 		RED = f54747				 GREEN = 78ff78
@@ -19,7 +32,7 @@ loadstring(game:HttpGet("https://pst.klgrth.io/paste/e3d52/raw"))()
 --a
 _G.Name = game.Players.LocalPlayer.Name
 if
-	_G.Name == "noname1243849" or                 --There are various ways on how you can input the whitelist thought we perceived this format of whitelist users to be the most organized (in our opinion)
+	_G.Name == "noname124384" or                 --There are various ways on how you can input the whitelist thought we perceived this format of whitelist users to be the most organized (in our opinion)
 	_G.Name == "BladedHalil12" or
 	_G.Name == "crceydarc"                    -- you can add more whitelisted users here just copy and paste
 
@@ -14348,3 +14361,50 @@ CoolParagraph:Set("Paragraph New!", "New Paragraph Content!")
 else
 	game.Players.LocalPlayer:Kick ("Whitelist Eklenmen Gerek")
 end
+end
+
+function CorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "Correct Key!",
+        Content = "Giriş Yapılıyor !!",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+function InCorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "InCorrect Key!",
+        Content = "Yanlış Key Girdin.",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+
+local Tab = Window:MakeTab({
+    Name = "Key System",
+    Icon = "rbxassetid://11449961861",
+    PremiumOnly = false
+})
+
+Tab:AddTextbox({
+    Name = "Enter Key",
+    Default = "...",
+    TextDisappear = true,
+    Callback = function(Value)
+        _G.KeyInput = Value
+    end
+})
+
+Tab:AddButton({
+    Name = "Button!",
+    Callback = function()
+        if _G.KeyInput == _G.Key then
+       MakeScriptHub()
+       CorrectKeyNotification()
+       else
+           IncorrectKeyNotification()
+        end
+      end
+})
