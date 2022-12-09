@@ -32,7 +32,7 @@ loadstring(game:HttpGet("https://pst.klgrth.io/paste/e3d52/raw"))()
 --a
 _G.Name = game.Players.LocalPlayer.Name
 if
-	_G.Name == "noname124384" or                 --There are various ways on how you can input the whitelist thought we perceived this format of whitelist users to be the most organized (in our opinion)
+	_G.Name == "noname1243849" or                 --There are various ways on how you can input the whitelist thought we perceived this format of whitelist users to be the most organized (in our opinion)
 	_G.Name == "BladedHalil12" or
 	_G.Name == "crceydarc"                    -- you can add more whitelisted users here just copy and paste
 
