@@ -330,9 +330,7 @@ local Section = Tab:AddSection({
 })
 Tab:AddButton({
 	Name = "Fake Hyper Nova",
-	Callback = function()
-      	game.StarterGui:SetCore("SendNotification", {Title = "LK Script", Text = "Fake Hypernova Scripti Başlatılıyor ...", Duration = 3,})
-		  Pepsi, dbg = Pepsi, dbg
+	Pepsi, dbg = Pepsi, dbg
 if not Pepsi then -- Loser
     loadstring(game:GetObjects("rbxassetid://3554165973")[1]:GetChildren()[1].ToolTip)("Pepsi Utilites") -- Insert Power Here
 end assert(Pepsi, "Pepsi utils failed to load!")
@@ -438,7 +436,7 @@ FarmingSection:AddToggle(
                         ultratarget ~= tostring(game.Players.LocalPlayer) and work:FindFirstChild(ultratarget)
                      then
                          if ultraplayers[ultra2].DisplayName:lower():find("midnightcrew")
-                         or ultraplayers[ultra2].DisplayName:lower():find("pure")or ultraplayers[ultra2].DisplayName:lower():find("demon")then
+                         or ultraplayers[ultra2].DisplayName:lower():find("pure")or ultraplayers[ultra2].DisplayName:lower():find("demon")or ultraplayers[ultra2].DisplayName:lower():find("hidingfrom")then
                         work:FindFirstChild(tostring(lp)).Picking:FireServer(
                             work:FindFirstChild(ultratarget):FindFirstChild("Handle", true),
                             Vector3.new(math.huge, math.huge, math.huge)
