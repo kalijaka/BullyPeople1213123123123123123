@@ -520,7 +520,7 @@ FarmingSection:AddButton(
             e:WaitForChild("GetUpEvent"):Destroy()
             e:WaitForChild("AfterRagdoll").Disabled=true
         end)
-  	end    
+	end
 })
 Tab:AddButton({
 	Name = "2. Bully People Sim Ui",
