@@ -324,29 +324,17 @@ Tab:AddTextbox({
 	Callback = function(Value)
 	
 local args = {
-   [1] = game:GetService("Players")..Character.RightLowerArm,
-   [2] = Vector3.new(43.8079453, 1.98774922, -131.031372)
+    [1] = "",
+    [2] = Vector3.new(43.8079453, 1.98774922, -131.031372)
 }
 
-game:GetService("Players").LocalPlayer.Character.Picking:FireServer(unpack(args))
-local plrs = game:GetService'Players'
-local plr = plrs.LocalPlayer
-local rs = game:GetService'RunService'
-
-local function findplr(name)
-    if name=='me' then
-        return plr
-    elseif plrs:FindFirstChild(name) then
-        return plrs:FindFirstChild(name)
-    end
-    for _,v in next,plrs:GetPlayers() do
-        if v.Name:lower():match('^'..name:lower()) or v.DisplayName:lower():match('^'..name:lower()) then
-            return v
-        end
+for i, v in pairs(game.Players:GetPlayers()) do
+    if v ~= game.Players.LocalPlayer then
+      args[1] = v.Character.RightLowerArm
+      game:GetService("Players").LocalPlayer.Character.Picking:FireServer(unpack(args))
     end
 end
-local player = findplr('playername')
-	end	  
+end	  
 })
 
 
